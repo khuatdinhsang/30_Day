@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="day18.css">
+    <script src="products.js"></script>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <ul class="menu-level-1">
+            <li class="item-level-1">
+                <a href="" class="item-level-1-title">Quần Áo</a>
+                <ul class="menu-level-2">
+                    <li class="item-level-2">
+                        <a href="" class="item-level-2-title">Quần Áo Nam</a>
+                    </li>
+                    <li class="item-level-2">
+                        <a href="" class="item-level-2-title">Quần Áo Nữ</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item-level-1">
+                <a href="" class="item-level-1-title">Phụ kiện</a>
+            </li>
+            <li class="item-level-1">
+                <a href="" class="item-level-1-title">Đồ điện tử</a>
+                <ul class="menu-level-2">
+                    <li class="item-level-2">
+                        <a href="" class="item-level-2-title">Điện thoại</a>
+                    </li>
+                    <li class="item-level-2">
+                        <a href="" class="item-level-2-title">Đồ gia dụng</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item-level-1">
+                <i class="item-cart fa-solid fa-cart-shopping"></i>
+            </li>
+        </ul>
+    </nav>
+    <section id="slider">
+        <img src="../30_day/img/dt2.jpg" alt="">
+    </section>
+
+    <section id="products">
+
+    </section>
+    <div>
+        <input type="text" id="idSanPham" placeholder="Enter ID san pham">
+        <button onclick="onClickTimKiemSanPham()" class="btn-Search">Tìm Kiếm</button>
+        <div id="ketQuaTimKiem">
+            <!-- Hien thi san pham o day -->
+        </div>
+    </div>
+    <script src="app18.js">
+    </script>
+</body>
+
+</html>

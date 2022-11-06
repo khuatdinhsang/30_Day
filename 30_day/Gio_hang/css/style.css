@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.list_img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_img img {
+    width: 200px;
+}
+
+.btn_add a {
+    padding: 10px;
+    background-color: red;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.order {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(226, 20, 20);
+    color: white;
+    text-align: center;
+    top: -10px;
+    left: 10px;
+    display: none;
+}
+
+.active {
+    display: block;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body onload="renderStudent()">
+    <label for="" class="city">Enter name of City</label>
+    <input type="text" id="city-name" placeholder="Enter name City...">
+    <div id="info-weather">
+    </div>
+    <!-- CRUD -->
+    <div class="form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" type="text" class="form-input">
+            <div style="color:red" class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input id="address" type="text" class="form-input">
+            <div style="color:red" class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <input id="index" type="hidden">
+        </div>
+        <button id="save" onclick="add()">Add New</button>
+        <button id="update" style="display:none" onclick="changeStudent()">Update</button>
+    </div>
+    <table border="1" id="tablecontent">
+
+    </table>
+    <!-- using axios -->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

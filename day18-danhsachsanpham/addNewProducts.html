@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .them-moi-san-pham {
+            width: 50%;
+            border: 1px solid #444;
+            margin: auto;
+            margin-top: auto;
+            padding: 30px;
+            box-shadow: 2px 2px 5px rgb(131, 128, 128);
+        }
+        
+        .them-moi-san-pham label,
+        input {
+            width: 100%;
+            display: block;
+        }
+        
+        .them-moi-san-pham label {
+            margin-top: 20px;
+        }
+        
+        .them-moi-san-pham input {
+            margin-top: 5px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .them-moi-san-pham button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: chocolate;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .them-moi-san-pham button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="them-moi-san-pham">
+        <label for="hinhAnh">Hình ảnh sản phẩm</label>
+        <input type="text" id="hinhAnh">
+        <label for="ten">Tên sản phẩm</label>
+        <input type="text" id="ten">
+        <label for="giaGoc">Giá Gốc</label>
+        <input type="text" id="giaGoc">
+        <label for="phanTramGiamGia">Giảm giá (%) - giá trị từ 0-1</label>
+        <input type="text" id="phanTramGiamGia">
+        <label for="khuVuc">Khu vực</label>
+        <input type="text" id="khuVuc">
+        <button id="btn" onclick="add()">Thêm mới sản phẩm </button>
+
+    </div>
+
+    <script>
+        var danhSachSanPham = JSON.parse(localStorage.getItem("danhSachSanPham"));
+        if (danhSachSanPham == null) {
+            danhSachSanPham = [];
+        }
+
+        function add() {
+            var nodeImg = document.getElementById("hinhAnh");
+            var hinhAnh = nodeImg.value;
+            nodeImg.value = '';
+            var nodeTen = document.getElementById("ten");
+            var ten = nodeTen.value;
+            nodeTen.value = '';
+            var nodeGiaGoc = document.getElementById("giaGoc");
+            var giaGoc = nodeGiaGoc.value;
+            nodeGiaGoc.value = '';
+            var nodePhanTramGiamGia = document.getElementById("phanTramGiamGia");
+            var phanTramGiamGia = nodePhanTramGiamGia.value;
+            nodePhanTramGiamGia.value = ''
+            var nodeKhuVuc = document.getElementById("khuVuc");
+            var khuVuc = nodeKhuVuc.value;
+            nodeKhuVuc.value = '';
+            var sanPham = TaoDoiTuongSanPham(hinhAnh, ten, giaGoc, phanTramGiamGia, khuVuc, null);
+
+            danhSachSanPham.push(sanPham);
+
+            // luu tru danh sach san pham xuogn local 
+            var jsonDanhSachSanPham = JSON.stringify(danhSachSanPham);
+            localStorage.setItem("danhSachSanPham", jsonDanhSachSanPham);
+        }
+
+        function TaoDoiTuongSanPham(hinhAnh, ten, giaGoc, phanTramGiamGia, khuVuc, id) {
+            var sanPham = new Object();
+            sanPham.hinhAnh = hinhAnh;
+            sanPham.ten = ten;
+            sanPham.giaGoc = giaGoc;
+            sanPham.phanTramGiamGia = phanTramGiamGia;
+            sanPham.khuVuc = khuVuc;
+            sanPham.tinhGiaBan = function() {
+                var giaBan = this.giaGoc * (1 - this.phanTramGiamGia);
+                return giaBan;
+            }
+            if (id != null) {
+                sanPham.id = id
+            } else {
+                sanPham.id = taoID();
+            }
+            sanPham.toJson = function() {
+                var json = JSON.stringify(this);
+                return json;
+            }
+            return sanPham;
+        }
+    </script>
+    <script src="products.js"></script>
+</body>
+
+</html>

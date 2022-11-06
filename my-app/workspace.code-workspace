@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": "..\\..\\W3School"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\test"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "test"
+    }
+}

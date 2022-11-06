@@ -1,0 +1,551 @@
+/* .box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.change {
+    background-color: green;
+    width: 500px;
+    height: 500px;
+}
+
+.name1 {
+    color: white;
+    font-size: 10px;
+} */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* 
+#title {
+    background-color: blue;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid green;
+}
+
+#title p {
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    margin: 50px;
+    width: 300px;
+    border: 1px solid blue;
+    transition: all 0.4s linear;
+}
+
+.title__content {
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.title__infor {
+    padding: 10px;
+}
+
+h3,
+p {
+    margin: 10px 0px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.pull_1 {
+    animation: chieu1 1s forwards !important;
+}
+
+@-webkit-keyframes chieu1 {
+    0% {
+        transform: translateX(0px);
+        margin-top: 50px;
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(300px);
+        margin-top: 50px;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(200px);
+        margin-top: 200px;
+        opacity: 1;
+    }
+}
+
+#pull_2 {
+    animation: chieu2 1s forwards;
+}
+
+@-webkit-keyframes chieu2 {
+    100% {
+        transform: translateX(0px);
+        margin-top: 50px;
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(300px);
+        margin-top: 50px;
+        opacity: 1;
+    }
+    0% {
+        transform: translateX(200px);
+        margin-top: 200px;
+        opacity: 1;
+    }
+} */
+
+
+/* .khongdong {
+    animation: none !important;
+}
+
+.motphantu {
+    position: relative;
+    margin-right: 200px;
+    float: right;
+}
+
+.thanhxanh {
+    height: 50px;
+    background-color: blue;
+}
+
+.tamgiac {
+    color: black;
+    font-size: 19px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.danhsach {
+    display: none;
+    visibility: hidden;
+}
+
+.danhsach1 {
+    list-style-type: none;
+    background-color: red;
+    display: inline-block;
+}
+
+.item {
+    padding: 20px;
+    border: 1px solid green;
+} */
+
+
+/* .danhsach:before {
+    content: "";
+    position: absolute;
+    border: 7px solid transparent;
+    top: 7px;
+    left: 4px;
+    border-bottom-color: white;
+} */
+
+
+/* .tg_trang {
+    color: white;
+}
+
+.xh {
+    display: block;
+} */
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/* 
+.noidungto {
+    transition: 0.4s;
+    height: 100%;
+}
+
+.menutrai {
+    height: 100%;
+    background-color: green;
+    width: 300px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 100;
+    transition: 0.4s;
+}
+
+.danhsach1 {
+    width: 100%;
+}
+
+.btn1 {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    margin-left: 538px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    color: black;
+}
+
+.den {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+} */
+
+
+/* .len {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menutrai.vetrai {
+    transform: translateX(-100%);
+}
+
+.dichphai {
+    transform: translateX(300px);
+} */
+
+
+/* bai tiep */
+
+
+/* .menu {
+    background-color: #cccccc;
+    padding: 40px 0;
+    font-size: 40px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.phai a {
+    transition: 0.4s;
+    padding: 0 40px;
+}
+
+.phai a:active,
+.phai a:visited {
+    text-decoration: none;
+}
+
+.cc {
+    height: 2000px;
+    width: 100px;
+    background-color: red;
+}
+
+.nholai {
+    font-size: 20px;
+    padding: 10px 0;
+} */
+
+
+/* kenh 14 */
+
+
+/* .banner {
+    height: 100px;
+    background: url(../img/kenh14.png);
+    background-size: cover;
+}
+
+.menu {
+    height: 50px;
+    line-height: 50px;
+    background-color: red;
+    transition: 0.4s;
+}
+
+.menu a {
+    color: white;
+    padding: 0 34px;
+    text-transform: uppercase;
+}
+
+.menu.menuden {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    background-color: black;
+}
+
+.vangdunglai {
+    position: fixed;
+    top: 49px;
+}
+
+.s3 {
+    opacity: 0;
+}
+
+.s3.dilen {
+    animation: cdlen 1s ease forwards;
+}
+
+@-webkit-keyframes cdlen {
+    from {
+        transform: translateY(100px);
+        opacity: 0
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+
+
+/* hieu ung chuyen slide */
+
+
+/*  CSS CHO CÁC PHẦN NỘI DUNG SLIDE  */
+
+.slidewrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cacslide ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cacslide {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.cacslide ul li.active {
+    opacity: 1;
+}
+
+.cacslide ul li {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.cacslide ul li .motslide {
+    position: relative;
+}
+
+.cacslide ul li .motslide {
+    position: relative;
+}
+
+.motslide .anh {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+ul li.active .motslide .nauduoi1 {
+    animation: nauvao 1s forwards;
+}
+
+ul li.active .motslide .nautren {
+    animation: nauvao1 1s forwards 0.3s;
+}
+
+@-webkit-keyframes nauvao {
+    from {
+        transform: translateX(-100%) translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 0.4;
+    }
+}
+
+@-webkit-keyframes nauvao1 {
+    from {
+        transform: translateX(-100%) translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 0.6;
+    }
+}
+
+.motslide {
+    width: 100%;
+    height: 100%;
+}
+
+.motslide .nauduoi1,
+.motslide .nautren,
+.motslide .textnoidung {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}
+
+.motslide .nauduoi1 {
+    opacity: 0;
+    top: -80%;
+}
+
+.motslide .nautren {
+    opacity: 0;
+    top: -40%;
+}
+
+.motslide .textnoidung {
+    width: 18%;
+    left: 4%;
+    top: 30%;
+    z-index: 3;
+    opacity: 1;
+    color: white;
+}
+
+.textnoidung h2 {
+    font-size: 80px;
+    opacity: 0;
+}
+
+.textnoidung small {
+    font-size: 33px;
+    padding: 10px 0 20px 0;
+    display: block;
+    opacity: 0;
+}
+
+.textnoidung .ke {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 1px 0 12px 0;
+    opacity: 0;
+}
+
+.textnoidung p {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0;
+    color: #dfdfdf;
+}
+
+.textnoidung .nut {
+    color: white;
+    text-decoration: none;
+    padding: 8px 24px;
+    border: 1px solid white;
+    margin: 12px 0 0 0;
+    display: inline-block;
+    opacity: 0;
+    font-size: 17px;
+}
+
+.cacslide ul li.active .textnoidung h2,
+.cacslide ul li.active .textnoidung small,
+.cacslide ul li.active .textnoidung .ke,
+.cacslide ul li.active .textnoidung p,
+.cacslide ul li.active .textnoidung .nut {
+    animation: chudivao 1s forwards;
+}
+
+.cacslide ul li.active .textnoidung h2 {
+    animation-delay: 1s;
+}
+
+.cacslide ul li.active .textnoidung small {
+    animation-delay: 1.2s;
+}
+
+.cacslide ul li.active .textnoidung .ke {
+    animation-delay: 1.4s;
+}
+
+.cacslide ul li.active .textnoidung p {
+    animation-delay: 1.6s;
+}
+
+.cacslide ul li.active .textnoidung .nut {
+    animation-delay: 1.8s;
+}
+
+@-webkit-keyframes chudivao {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.chuyenslide {
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.chuyenslide ul {
+    display: inline-block;
+}
+
+.chuyenslide ul li {
+    display: inline-block;
+    border: 1px solid grey;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 20px 12px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.chuyenslide ul li:hover,
+.chuyenslide ul li.kichhoat {
+    background-color: rgb(43, 40, 40);
+}

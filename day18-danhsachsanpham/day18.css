@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: #F7452E;
+    --primary-dark-color: #c53724;
+    --primary-light-color: #f86a57;
+    --dark-color: #222;
+    --light-color: #fff;
+}
+
+
+/* navbar */
+
+#nav-bar {
+    background-color: var(--primary-color);
+}
+
+.menu-level-1 {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-level-1 {
+    padding: 16px 20px;
+}
+
+.item-level-1 a,
+i {
+    color: var(--light-color);
+}
+
+.item-level-1:hover {
+    background-color: var(--primary-dark-color);
+}
+
+.item-level-1:hover .menu-level-2 {
+    display: block;
+}
+
+.item-level-1:last-child {
+    margin-left: auto;
+}
+
+.menu-level-2 {
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 4px #ddd;
+    position: absolute;
+    z-index: 100;
+    top: 52px;
+    display: none;
+    background-color: #fff;
+}
+
+.menu-level-2 a {
+    color: var(--dark-color);
+}
+
+.menu-level-2 .item-level-2 {
+    padding: 10px 20px;
+}
+
+.menu-level-2 .item-level-2:hover {
+    text-decoration: underline;
+}
+
+
+/* slider */
+
+#slider {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 4px #ddd;
+    padding: 10px;
+}
+
+#slider img {
+    object-fit: cover;
+    height: 30vh;
+}
+
+
+/*  danh sách sản phẩm  */
+
+#products {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#products .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    height: 250px;
+}
+
+#products .items .item {
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 4px #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.item-thumb {
+    height: 70%;
+}
+
+#products .items .item .item-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.item-title {
+    cursor: pointer;
+}
+
+#products .items .item .item-price {}
+
+#products .items .item .item-price .item-price-origin {
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+#products .items .item .item-price .item-price-sale {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+#products .items .item .btn.btn-primary {
+    margin-left: auto;
+    display: block;
+}
