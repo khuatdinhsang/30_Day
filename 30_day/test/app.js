@@ -9,6 +9,9 @@ let play = document.querySelector('.play');
 let stop = document.querySelector('.stop');
 console.log(btn);
 
+var s= "SAng dep trai";
+ var s1= s.replace("dep","ngu");
+ console.log(s1)
 function show() {
     if (currentIndex == 0) {
         prev.classList.add('hide')
